@@ -2,10 +2,10 @@
   "name": "books-store",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://pelmeshek91.github.io/books-store",
+  "homepage": "https://GoitStudentsWorks.github.io/bc_51_pelmeshek91",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /books-store/ --no-optimize"
+    "build": "parcel build src/*.html --public-url /bc_51_pelmeshek91/ --no-optimize"
   },
   "repository": {
     "type": "git",
