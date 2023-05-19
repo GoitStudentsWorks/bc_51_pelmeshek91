@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head><script nomodule="" defer="" src="/bc_51_pelmeshek91/shoppingList.eb5f154e.js"></script><script nomodule="" defer="" src="/bc_51_pelmeshek91/shoppingList.4a972488.js"></script><script type="module" src="/bc_51_pelmeshek91/shoppingList.bc5ba1d4.js"></script><script type="module" src="/bc_51_pelmeshek91/shoppingList.fc030349.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Store</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/bc_51_pelmeshek91/favicon-16x16.b1d101b2.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bc_51_pelmeshek91/index.e1791526.css">
+  </head>
+
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header>
+  <div class="header-container container">
+    <a class="logo-link" href="/bc_51_pelmeshek91/index.html">
+      <svg class="logo" width="24" height="24">
+        <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-logo-1"></use>
+      </svg>
+      <svg class="logo-book" width="81" height="24">
+        <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-Bookshelf"></use>
+      </svg>
+    </a>
+    <a class="home-btn active-home is-hidden" href="/bc_51_pelmeshek91/index.html">HOME</a>
+    <a class="shop-btn is-hidden" href="/bc_51_pelmeshek91/shoppingList.html">SHOPPING LIST
+      <svg class="shop-logo" width="20" height="20">
+        <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-lock"></use>
+      </svg>
+    </a>
+    <div class="theme-switch__control">
+      <input class="theme-switch__toggle" type="checkbox" name="theme" id="theme-switch-toggle" aria-label="Переключить тему">
+      <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle">
+      </label>
+      <div aria-hidden="true" class="theme-switch__marker"></div>
+    </div>
+    <div class="autorithation-container">
+      <button type="button" class="sign-btn" autoriz-open-menu="">
+        Sign up
+        <svg class="arrow" width="20" height="20">
+          <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+      <div class="display-none">
+        <button class="menu-toggle burger-modal-open">
+          <svg class="icon-burger" width="28" height="28">
+            <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-align-left"></use>
+          </svg>
+        </button>
+        <button class="menu-toggle burger-modal-close hiden-burger">
+          <svg class="icon-burger" width="28" height="28">
+            <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="container main">
+  <div class="aside">
+    <div class="categories_section"><ul class="categories_list"></ul></div>
+
+    <div class="support-container">
+  <div class="support-header">
+    <h1 class="support-title">Support Ukraine</h1>
+    <svg class="ukraine-icon" width="20px" height="32px">
+      <use href="/bc_51_pelmeshek91/support-svg.b733e313.svg#tryzub"></use>
+    </svg>
+  </div>
+  <ul class="support-list"></ul>
+  <button class="scroll-btn" type="button">
+    <svg class="scroll-icon" width="22px" height="22px">
+      <use href="/bc_51_pelmeshek91/support-svg.b733e313.svg#scroll-icon-2"></use>
+    </svg>
+  </button>
+  
+</div>
+
+  </div>
+
+  <section class="books"></section>
+
+</main>
+
+    <div class="backdrop is-hidden">
+  <div class="modal-add-book-window"></div>
+</div>
+
+    <div class="backdrop-autoriz" autoriz-is-hidden="">
+  <div class="autoriz-modal">
+    <button class="autoriz-modal-btn" type="button" autoriz-close-menu="">
+      <svg class="modal-icon-cross">
+        <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-x-close"></use>
+      </svg>
+    </button>
+
+    <form class="autoriz-modal-form">
+      <input class="autoriz-modal-input" type="text" placeholder="NAME" minlength="3" required="">
+
+      <div class="input-wrapper">
+        <label class="autoriz-label-email" for="user_email"><input class="autoriz-modal-input autoriz-email" type="email" placeholder="EMAIL" id="user_email" name="autoriz_email" required="">
+          <svg class="autoriz-icon">
+            <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-lock"></use>
+          </svg></label>
+      </div>
+
+      <div class="input-wrapper">
+        <label class="autoriz-label-password" for="user_password">
+          <input class="autoriz-modal-input" type="password" placeholder="PASSWORD" id="user_password" name="autoriz_password" minlength="6" required="">
+          <svg class="autoriz-icon">
+            <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-mail"></use>
+            </svg></label>
+      </div>
+
+      <button class="autoriz-sing-up-btn" type="submit">sign up</button>
+      <div class="autoriz-text">
+        <button class="autoriz-sub-btn" id="up" type="button">sign up</button>
+        <button class="autoriz-sub-btn" id="in" type="button">sign in</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+    <!-- <div id="maskLoader" class="mask">
+  <div class="loader bookLoader">
+    <figure class="page"></figure>
+    <figure class="page"></figure>
+    <figure class="page"></figure>
+  </div>
+</div> -->
+
+    <button class="scroll-up-btn" type="button">
+  <svg class="scroll-up-icon" width="24px" height="24px">
+    <use href="/bc_51_pelmeshek91/support-svg.b733e313.svg#scroll-up"></use>
+  </svg>
+</button>
+
+    <div class="backdrop-burger is-hidden" burger-data-modal="">
+  <div class="burger-modal menu-container" id="mobile-menu">
+    <button type="button" class="sign-btn-burger sign-btn autoriz-open-menu">
+      Sign up
+      <svg class="arrow" width="20" height="20">
+        <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-arrow-narrow-right"></use>
+      </svg>
+    </button>
+
+    <div class="btn-burger">
+      <a class="home-btn-burger" href="/bc_51_pelmeshek91/index.html">HOME</a>
+      <a class="shop-btn-burger" href="/bc_51_pelmeshek91/shoppingList.html">SHOPPING LIST
+        <svg class="shop-logo-burger" width="20" height="20">
+          <use href="/bc_51_pelmeshek91/general-svg.svg.a33baf69.svg#icon-bag-shop"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="burger-books-list">
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image5@x1.4105c33a.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image1@x1.6d811c12.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image2@x1.15bf14e3.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image6@x1.cee8d9f6.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image7@x1.f0581472.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image3@x1.8e552112.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image4@x1.5a1ef80e.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image8@x1.0658c054.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image9@x1.83d305fc.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image10@x1.f9a4bf04.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image11@x1.90687ac2.png" class="img-burger" width="104" height="133">
+      </li>
+      <li class="list-burger">
+        <img src="/bc_51_pelmeshek91/image12@x1.74b0f720.png" class="img-burger" width="104" height="133">
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <script type="module" src="/bc_51_pelmeshek91/index.74effdfd.js"></script><script src="/bc_51_pelmeshek91/index.b74e5dc5.js" nomodule="" defer=""></script>
+  </body>
+</html>
